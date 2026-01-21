@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa27928837f71e845ae9471456eb4c85
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _addedNetworkObject: {instanceID: 0}
+  - _networkObjectCache: {instanceID: 0}
+  - playerPrefab: {instanceID: 0}
+  - spawnPointP1: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
