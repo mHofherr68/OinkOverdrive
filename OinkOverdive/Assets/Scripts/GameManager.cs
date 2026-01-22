@@ -1,4 +1,4 @@
-using FishNet;
+/*using FishNet;
 using FishNet.Connection;
 using FishNet.Object;
 using UnityEngine;
@@ -27,17 +27,17 @@ public class GameManager : NetworkBehaviour
     private void TrySpawnPlayers()
     {
         if (playerPrefab == null || spawnPointP1 == null || spawnPointP2 == null)
+        {
+            // Nicht spammen; einmal reicht
             return;
+        }
 
-        // FishNet hält eine Liste der verbundenen Clients.
-        // Wir nutzen die Reihenfolge aus ServerManager.Clients.
         var clients = InstanceFinder.ServerManager.Clients;
 
-        // Wir brauchen 2 Verbindungen: Host-Client + Remote-Client.
+        // Spawne erst, wenn 2 Clients verbunden sind (Host-Client + Remote-Client)
         if (clients.Count < 2)
             return;
 
-        // Hole zwei Verbindungen (erste zwei Einträge).
         NetworkConnection conn1 = null;
         NetworkConnection conn2 = null;
 
@@ -67,8 +67,15 @@ public class GameManager : NetworkBehaviour
     private void SpawnFor(NetworkConnection conn, Vector3 pos)
     {
         var obj = Instantiate(playerPrefab, pos, Quaternion.identity);
-
-        // Wichtig: Ownership an die Verbindung geben
-        Spawn(obj, conn);
+        Spawn(obj, conn); // Ownership an diese Verbindung
     }
+}*/
+
+
+//->
+using FishNet.Object;
+
+public class GameManager : NetworkBehaviour
+{
+    // Später: Boss/Waves/Score
 }
