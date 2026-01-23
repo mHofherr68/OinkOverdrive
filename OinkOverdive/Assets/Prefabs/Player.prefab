@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2185040617065164943}
   - component: {fileID: -9195629804608370981}
   - component: {fileID: 3029228967381232720}
+  - component: {fileID: -4758897245716102412}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -118,6 +119,7 @@ MonoBehaviour:
   - {fileID: 4015167347819160924}
   - {fileID: -9195629804608370981}
   - {fileID: 3029228967381232720}
+  - {fileID: -4758897245716102412}
   InitializedParentNetworkBehaviour: {fileID: 0}
   InitializedNestedNetworkObjects: []
   RuntimeParentNetworkBehaviour: {fileID: 0}
@@ -128,7 +130,7 @@ MonoBehaviour:
   _initializeOrder: 0
   _preventDespawnOnDisconnect: 0
   _defaultDespawnType: 0
-  _initializedTimestamp: -8584324417860880626
+  _initializedTimestamp: -8584324128378403382
   NetworkObserver: {fileID: 0}
   _enablePrediction: 0
   _predictionType: 0
@@ -287,7 +289,7 @@ MonoBehaviour:
   _componentIndexCache: 1
   _addedNetworkObject: {fileID: 4149298341621387442}
   _networkObjectCache: {fileID: 4149298341621387442}
-  moveSpeed: 7
+  moveSpeed: 9
 --- !u!114 &2185040617065164943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +317,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
-  m_DefaultActionMap: df70fa95-8a34-4494-b137-73ab6b9c7d37
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &-9195629804608370981
@@ -334,6 +336,7 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 4149298341621387442}
   _networkObjectCache: {fileID: 4149298341621387442}
   projectilePrefab: {fileID: 3721526710618003113, guid: cbab08b63b61ce64e863196378c8afb5, type: 3}
+  projectileSpeed: 12
   despawnDelay: 3
 --- !u!114 &3029228967381232720
 MonoBehaviour:
@@ -351,4 +354,20 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 4149298341621387442}
   _networkObjectCache: {fileID: 4149298341621387442}
   spawner: {fileID: -9195629804608370981}
-  fireCooldown: 0.25
+  fireCooldown: 0.1
+--- !u!114 &-4758897245716102412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565377059938168675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15cc32f7c8089d0469fb54b3c772e090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 4
+  _addedNetworkObject: {fileID: 4149298341621387442}
+  _networkObjectCache: {fileID: 4149298341621387442}
+  startScore: 300
